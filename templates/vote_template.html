@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Votação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .votes {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Votação</h1>
+    <img src="https://via.placeholder.com/600x400?text=Imagem+em+votação" alt="Imagem em votação">
+    <div class="votes">
+        <p>Sim: {{ votes['sim'] }} votos ({{ percentages['sim'] }}%)</p>
+        <p>Não: {{ votes['nao'] }} votos ({{ percentages['nao'] }}%)</p>
+    </div>
+</body>
+</html>
